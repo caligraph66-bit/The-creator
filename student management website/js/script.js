@@ -17,7 +17,7 @@ studentForm.addEventListener("submit", function(event) {
     const marks = Number(document.getElementById("marks").value);
 
 function savestudents(){
-    localStorage.setItem(students),JSON.stringify(students);
+    localStorage.setItem("students",JSON.stringify(students));
 }
     if (name === "") {
         showMessage("Please enter the student's name.", "error");
