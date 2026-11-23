@@ -5,6 +5,7 @@ const studentForm = document.getElementById("studentForm");
 const studentTableBody = document.getElementById("studentTableBody");
 const searchInput = document.getElementById("searchInput");
 
+h
 if (studentForm) {
 studentForm.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -15,6 +16,9 @@ studentForm.addEventListener("submit", function(event) {
     const course = document.getElementById("course").value;
     const marks = Number(document.getElementById("marks").value);
 
+function savestudents(){
+    localStorage.setItem(students),JSON.stringify(students);
+}
     if (name === "") {
         showMessage("Please enter the student's name.", "error");
         return;
